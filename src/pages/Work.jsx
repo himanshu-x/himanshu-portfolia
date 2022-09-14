@@ -1,7 +1,6 @@
 import React from 'react';
 import Veganfood from '../assets/veganfood.png';
 import DumyFoodWeb from '../assets/dumyfood.png';
-import tourWeb from '../assets/tours.png';
 
 const Work = () => {
     return (
@@ -11,7 +10,7 @@ const Work = () => {
                     <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
                         Work
                     </p>
-                    <p className='py-6'>// Check out some of my recent work</p>
+                    <p className='py-6'>Check out some of my recent work</p>
                 </div>
 
                 {/* Container */}

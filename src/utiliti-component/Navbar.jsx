@@ -16,7 +16,7 @@ export default function Navbar() {
     return (
         <div className="fixed w-full h-[80px] flex justify-between bg-[#0a192f] md:justify-around items-center px-8 text-gray-300">
             <div>
-                <img src={LogoHy} alt="hy logo image" style={{ width: "60px" }} />
+                <img src={LogoHy} alt="hy logo" style={{ width: "60px" }} />
             </div>
 
             {/* menu  */}
