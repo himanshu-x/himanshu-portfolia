@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FcCellPhone } from 'react-icons/fc'
 import LogoHy from "../assets/him.png"
 import { Link as LinkScroll } from 'react-scroll'
 
@@ -14,7 +14,7 @@ export default function Navbar() {
 
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between bg-[#0a192f] md:justify-around items-center px-8 text-gray-300">
+        <div className="fixed w-full h-[64px] flex justify-between bg-[#0a192f] md:justify-around items-center px-8 text-gray-300">
             <div>
                 <img src={LogoHy} alt="hy logo" style={{ width: "60px" }} />
             </div>
@@ -77,13 +77,14 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-                        <a className="flex justify-around items-center w-full text-gray-300" href="/">
+                        <a className="flex justify-around items-center w-full text-gray-300" href="mailto: hy12632@gmail.com">
                             Email <HiOutlineMail size={30} />
                         </a>
+
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-                        <a className="flex justify-around items-center w-full text-gray-300" href="/">
-                            Resume <BsFillPersonLinesFill size={30} />
+                        <a className="flex justify-around items-center w-full text-gray-300" href="tel:8769476754">
+                            Phone <FcCellPhone size={30} />
                         </a>
                     </li>
                 </ul>
