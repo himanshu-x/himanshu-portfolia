@@ -11,7 +11,7 @@ import Reactjs from "../assets/react.png"
 export default function Skills() {
 
     return (
-        <div name="skills" className="h-screen w-full bg-[#0a192f] text-gray-300 ">
+        <div name="skills" className="sm:h-full w-full bg-[#0a192f] text-gray-300 ">
             <div className="max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full p-4">
                 <div className="">
                     <p className="text-4xl font-bold inline  border-b-4 border-pink-600">Skills</p>
