@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
+import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi'
 import { FcCellPhone } from 'react-icons/fc'
 import LogoHy from "../assets/him.png"
 import { Link as LinkScroll } from 'react-scroll'
@@ -85,6 +85,11 @@ export default function Navbar() {
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
                         <a className="flex justify-around items-center w-full text-gray-300" href="tel:8769476754">
                             Phone <FcCellPhone size={30} />
+                        </a>
+                    </li>
+                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
+                        <a className="flex justify-around items-center w-full text-gray-300" href="https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525">
+                            Address <HiLocationMarker size={30} />
                         </a>
                     </li>
                 </ul>
