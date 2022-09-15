@@ -13,7 +13,7 @@ export default function About() {
                     <div className="sm:text-right text-3xl font-bold">
                         <p>Hi, I'm Himanshu, nice to meet you. Please take a look around.</p>
                     </div>
-                    <p>I am Passionate about building excellent software that imporves the lives of those around me.
+                    <p>I am passionate about building excellent software that improve the lives of those around me.
                     </p>
 
                 </div>
