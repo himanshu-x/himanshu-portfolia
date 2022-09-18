@@ -19,7 +19,7 @@ const Work = () => {
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 min-h-full'>
 
                     {/* Grid Item */}
-                    <marquee behavior="scroll" direction="up"
+                    <div behavior="scroll" direction="up"
                         style={{ backgroundImage: `url(${Veganfood})` }}
                         className=' bg-cover 
                         object-center  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '
@@ -42,8 +42,8 @@ const Work = () => {
                                 </a>
                             </div>
                         </div>
-                    </marquee>
-                    <marquee behavior="scroll" direction="up"
+                    </div>
+                    <div behavior="scroll" direction="up"
                         style={{ backgroundImage: `url(${DumyFoodWeb})` }}
                         className=' bg-cover shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
@@ -65,8 +65,8 @@ const Work = () => {
                                 </a>
                             </div>
                         </div>
-                    </marquee>
-                    <marquee
+                    </div>
+                    <div
                         behavior="scroll" direction="up" style={{ backgroundImage: `url(${Tours})` }}
                         className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
@@ -88,8 +88,8 @@ const Work = () => {
                                 </a>
                             </div>
                         </div>
-                    </marquee>
-                    <marquee
+                    </div>
+                    <div
                         behavior="scroll" direction="up" style={{ backgroundImage: `url(${Village})` }}
                         className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
@@ -111,7 +111,7 @@ const Work = () => {
                                 </a>
                             </div>
                         </div>
-                    </marquee>
+                    </div>
                 </div>
             </div>
         </div>
