@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi'
-import { FcCellPhone } from 'react-icons/fc'
+import { FiPhoneCall } from 'react-icons/fi'
 import LogoHy from "../assets/him.png"
 import { Link as LinkScroll } from 'react-scroll'
 
@@ -22,19 +22,19 @@ export default function Navbar() {
             {/* menu  */}
 
             <ul className="hidden md:flex gap-8 text-xl  ">
-                <li className="hover:text-pink-600 hover:underline "> <LinkScroll to="home" smooth={true} duration={500} >
+                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="home" smooth={true} duration={500} >
                     Home
                 </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline"> <LinkScroll to="about" smooth={true} duration={500} >
+                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="about" smooth={true} duration={500} >
                     About
                 </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline"> <LinkScroll to="skills" smooth={true} duration={500} >
+                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="skills" smooth={true} duration={500} >
                     Skills
                 </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline"> <LinkScroll to="work" smooth={true} duration={500} >
+                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="work" smooth={true} duration={500} >
                     Work
                 </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline"> <LinkScroll to="contact" smooth={true} duration={500} >
+                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="contact" smooth={true} duration={500} >
                     Contact
                 </LinkScroll></li>
             </ul>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
                         <a className="flex justify-around items-center w-full text-gray-300" href="tel:8769476754">
-                            Phone <FcCellPhone size={30} />
+                            Phone <FiPhoneCall size={30} />
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
