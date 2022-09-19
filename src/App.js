@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./utiliti-component/Navbar";
+import Navbar from "./utility-component/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
