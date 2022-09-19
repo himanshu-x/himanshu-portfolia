@@ -1,5 +1,5 @@
 import React from "react";
-import Himanshu from "../assets/him1.png"
+import Himanshu from "../assets/himpicdp.png"
 export default function About() {
 
     return (
@@ -10,7 +10,7 @@ export default function About() {
                 </div>
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-2 text-center py-8">
                     <img className="p-3 object-contain mx-auto rounded-full max-w-xs" src={Himanshu} alt="img" />
-                    <div className="">
+                    <div className="flex flex-col  justify-center">
                         <p className="sm:text-right text-3xl font-bold">Hi, I'm Himanshu, nice to meet you. Please take a look around.</p>
                         <p className="p-9">I am passionate about building excellent software that improve the lives of those around me.</p>
                     </div>

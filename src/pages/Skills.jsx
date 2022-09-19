@@ -1,12 +1,11 @@
 import React from "react";
-// import { Link } from "react-scroll";
-import Html from "../assets/html1.png"
-import Css from "../assets/cssicon.png"
-import Github from "../assets/github.png"
-import Javascript from "../assets/js-logo.png"
-import Nodejs from "../assets/nodejs.png"
-import Tailwindcss from "../assets/Tailwind-img.png"
-import Reactjs from "../assets/r1.png"
+import Html from "../assets/html-1.svg"
+import Css from "../assets/css-3.svg"
+import Github from "../assets/github-icon.svg"
+import Javascript from "../assets/javascript-1.svg"
+import Nodejs from "../assets/nodejs-2.svg"
+import Tailwindcss from "../assets/tailwindcss.svg"
+import Reactjs from "../assets/react-2.svg"
 
 
 export default function Skills() {
@@ -48,7 +47,6 @@ export default function Skills() {
                         <p className="my-4">GITHUB</p>
                     </div>
                 </div>
-
             </div>
         </div>
     )
