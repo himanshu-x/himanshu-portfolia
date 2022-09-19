@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowNarrowDown, HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowDown } from "react-icons/hi";
 
 export default function Home() {
 
