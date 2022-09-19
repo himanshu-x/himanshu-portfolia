@@ -15,9 +15,8 @@ export default function Navbar() {
 
     return (
         <div className="fixed w-full h-[64px] flex justify-between bg-[#0a192f] md:justify-around items-center px-8 text-gray-300">
-            <div>
-                <img src={LogoHy} alt="hy logo" style={{ width: "60px" }} />
-            </div>
+
+            <img className="mt-2" src={LogoHy} alt="hy logo" style={{ width: "64px" }} />
 
             {/* menu  */}
 
@@ -46,25 +45,25 @@ export default function Navbar() {
             </div>
             {/* mobile menu  */}
 
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center '}>
-                <li className="py-6 text-4xl"><LinkScroll onClick={handleClick} to="home" smooth={true} duration={500} >
+            <ul className={!nav ? 'hidden' : 'absolute top-16 right-4 text-[#0a192f] p-4 bg-pink-600 flex flex-col justify-center items-center '}>
+                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="home" smooth={true} duration={500} >
                     Home
                 </LinkScroll></li>
-                <li className="py-6 text-4xl"><LinkScroll onClick={handleClick} to="about" smooth={true} duration={500} >
+                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="about" smooth={true} duration={500} >
                     About
                 </LinkScroll></li>
-                <li className="py-6 text-4xl"><LinkScroll onClick={handleClick} to="skills" smooth={true} duration={500} >
+                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="skills" smooth={true} duration={500} >
                     Skills
                 </LinkScroll></li>
-                <li className="py-6 text-4xl"><LinkScroll onClick={handleClick} to="work" smooth={true} duration={500} >
+                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="work" smooth={true} duration={500} >
                     Work
                 </LinkScroll></li>
-                <li className="py-6 text-4xl"><LinkScroll onClick={handleClick} to="contact" smooth={true} duration={500} >
+                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="contact" smooth={true} duration={500} >
                     Contact
                 </LinkScroll></li>
             </ul>
             {/* Social icons  */}
-            <div className="hidden lg:flex fixed flex-col top-[35%] left-0 ">
+            <div className=" lg:flex fixed flex-col top-[35%] left-0 ">
                 <ul>
                     <li className=" w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-around items-center w-full text-gray-300" href="https://www.linkedin.com/in/himanshu1807/">
