@@ -47,7 +47,6 @@ export default function Skills() {
                         <p className="my-4">GITHUB</p>
                     </div>
                 </div>
-
             </div>
         </div>
     )

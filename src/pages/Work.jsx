@@ -14,33 +14,24 @@ const Work = () => {
                     </p>
                     <p className='py-6'>Check out some of my recent work.</p>
                 </div>
-
-                {/* Container */}
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 min-h-[600px]'>
-
-                    {/* Grid Item */}
                     <div
                         style={{ backgroundImage: `url(${Veganfood})` }}
-                        className=' bg-cover 
-                        object-center  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '
-                    >
+                        className=' bg-cover object-center  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
                     </div>
                     <div
                         style={{ backgroundImage: `url(${DumyFoodWeb})` }}
-                        className=' bg-cover shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
+                        className=' bg-cover shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                     </div>
                     <div
                         style={{ backgroundImage: `url(${Tours})` }}
-                        className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
+                        className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                     </div>
                     <div
                         style={{ backgroundImage: `url(${Village})` }}
-                        className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
+                        className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                     </div>
                 </div>
