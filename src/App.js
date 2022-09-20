@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Work from './pages/Work'
+import SocialLink from './pages/SocialLinks'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <SocialLink />
     </div>
 
   );

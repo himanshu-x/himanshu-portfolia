@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi'
+import { HiOutlineMail, HiOutlineDocumentText } from 'react-icons/hi'
 import { FiPhoneCall } from 'react-icons/fi'
-import { GrResume } from 'react-icons/gr'
+import { MdOutlineLocationOn } from 'react-icons/md'
 import LogoHy from "../assets/him.png"
 import { Link as LinkScroll } from 'react-scroll'
 
@@ -64,7 +64,7 @@ export default function Navbar() {
                 </LinkScroll></li>
             </ul>
             {/* Social icons  */}
-            <div className=" lg:flex fixed flex-col top-[25%] left-0 ">
+            <div className="hidden lg:flex fixed flex-col top-[25%] left-0 ">
                 <ul>
                     <li className=" w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-around items-center w-full text-gray-300" href="https://www.linkedin.com/in/himanshu1807/">
@@ -89,17 +89,16 @@ export default function Navbar() {
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
                         <a className="flex justify-around items-center w-full text-gray-300" href="https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525">
-                            Address <HiLocationMarker size={30} />
+                            Address <MdOutlineLocationOn size={30} />
                         </a>
                     </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-800">
+                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-700">
                         <a className="flex justify-around items-center w-full text-gray-300" href="https://drive.google.com/drive/folders/1ntoOMFCscDhPFmjdHOAwNHBY5pv_bPua">
-                            Resume <GrResume size={30} />
+                            Resume <HiOutlineDocumentText size={30} />
                         </a>
                     </li>
                 </ul>
             </div>
-
         </div>
     )
 }
