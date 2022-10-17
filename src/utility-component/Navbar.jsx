@@ -72,28 +72,28 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300  bg-[#333333] ">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="https://github.com/himanshu-x">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noreferrer" href="https://github.com/himanshu-x">
                             Github <FaGithub size={30} />
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="mailto: hy12632@gmail.com">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noreferrer" href="mailto: hy12632@gmail.com">
                             Email <HiOutlineMail size={30} />
                         </a>
 
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="tel:8769476754">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noreferrer" href="tel:8769476754">
                             Phone <FiPhoneCall size={30} />
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525">
                             Address <MdOutlineLocationOn size={30} />
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-700">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing">
                             Resume <HiOutlineDocumentText size={30} />
                         </a>
                     </li>
