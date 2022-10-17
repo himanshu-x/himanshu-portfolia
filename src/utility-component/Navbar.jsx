@@ -67,7 +67,7 @@ export default function Navbar() {
             <div className="hidden lg:flex fixed flex-col top-[25%] left-0 ">
                 <ul>
                     <li className=" w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" href="https://www.linkedin.com/in/himanshu1807/">
+                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/himanshu1807/">
                             Linkedin <FaLinkedin size={30} />
                         </a>
                     </li>
