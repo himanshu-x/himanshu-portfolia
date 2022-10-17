@@ -93,7 +93,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-700">
-                        <a className="flex justify-around items-center w-full text-gray-300" href="https://drive.google.com/drive/folders/1ntoOMFCscDhPFmjdHOAwNHBY5pv_bPua">
+                        <a className="flex justify-around items-center w-full text-gray-300" href="https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing">
                             Resume <HiOutlineDocumentText size={30} />
                         </a>
                     </li>
