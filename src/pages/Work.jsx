@@ -19,27 +19,27 @@ const Work = () => {
                     <div
                         style={{ backgroundImage: `url(${Veganfood})` }}
                         className=' bg-cover object-center  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-                        <a className='border hover:bg-pink-600 bg-orange-600 rounded-md p-2' href="https://github.com/himanshu-x/just-vegan-react" alt="This is Private Repo">Private Code</a>
+                        <a className='border hover:bg-pink-600 bg-orange-600 rounded-md p-2' target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x/just-vegan-react" alt="This is Private Repo">Private Code</a>
                     </div>
                     <div
                         style={{ backgroundImage: `url(${DumyFoodWeb})` }}
                         className=' bg-cover shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' href="https://github.com/himanshu-x/new-food-react-websites">Check code</a>
+                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x/new-food-react-websites">Check code</a>
                     </div>
                     <div
                         style={{ backgroundImage: `url(${Tours})` }}
                         className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' href="https://github.com/himanshu-x/tours-app">Check code</a>
+                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x/tours-app">Check code</a>
                     </div>
                     <div
                         style={{ backgroundImage: `url(${Village})` }}
                         className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' href="https://github.com/himanshu-x/my-village" alt="This is Private Repo">Private code</a>
+                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x/my-village" alt="This is Private Repo">Private code</a>
                     </div>
                     <div
                         style={{ backgroundImage: `url(${RestaMenu})` }}
                         className=' bg-cover  shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' href="https://github.com/himanshu-x/restaurant-menu">Check code</a>
+                        <a className='border  hover:bg-pink-600 bg-orange-600 rounded-md p-2' target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x/restaurant-menu">Check code</a>
                     </div>
                 </div>
             </div>
