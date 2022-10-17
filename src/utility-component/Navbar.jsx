@@ -5,6 +5,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import LogoHy from "../assets/him.png"
 import { Link as LinkScroll } from 'react-scroll'
+import BaseLinkUrlBlankTab from "./BaselinkUrlBlankTab";
 
 export default function Navbar() {
 
@@ -12,91 +13,73 @@ export default function Navbar() {
     const handleClick = () => {
         setNav(!nav)
     }
+    const socialData = [
+        { url: "https://www.linkedin.com/in/himanshu1807/", labelName: "Linkedin", iconName: FaLinkedin, bgColor: `bg-blue-500` },
+        { url: "https://github.com/himanshu-x", labelName: "Github", iconName: FaGithub, bgColor: `bg-[#333333]` },
+        { url: "mailto: hy12632@gmail.com", labelName: "Email", iconName: HiOutlineMail, bgColor: `bg-[#565f69]` },
+        { url: "tel:8769476754", labelName: "Phone", iconName: FiPhoneCall, bgColor: `bg-[#6fc2b0]` },
+        { url: "https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525", labelName: "Address", iconName: MdOutlineLocationOn, bgColor: `bg-slate-600` },
+        { url: "https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing", labelName: "Resume", iconName: HiOutlineDocumentText, bgColor: `bg-amber-700` },
+    ]
 
+    const mobileNavMenuData = [
+        { toLink: "home", labelName: "Home" },
+        { toLink: "about", labelName: "About" },
+        { toLink: "skills", labelName: "Skills" },
+        { toLink: "work", labelName: "Work" },
+        { toLink: "contact", labelName: "Contact" },
+    ]
 
     return (
         <div className="fixed w-full h-[64px] flex justify-between bg-[#0a192f] md:justify-around items-center px-8 text-gray-300">
 
             <img className="mt-2" src={LogoHy} alt="hy logo" style={{ width: "64px" }} />
 
-            {/* menu  */}
-
-            <ul className="hidden md:flex gap-8 text-xl  ">
-                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="home" smooth={true} duration={500} >
-                    Home
-                </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="about" smooth={true} duration={500} >
-                    About
-                </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="skills" smooth={true} duration={500} >
-                    Skills
-                </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="work" smooth={true} duration={500} >
-                    Work
-                </LinkScroll></li>
-                <li className="hover:text-pink-600 hover:underline cursor-pointer "> <LinkScroll to="contact" smooth={true} duration={500} >
-                    Contact
-                </LinkScroll></li>
+            {/* NavBarMenu  */}
+            <ul className="hidden md:flex gap-8 text-xl">
+                {
+                    mobileNavMenuData.map(({ toLink: ToLink, labelName: LabelName }, index) => {
+                        return (
+                            <li key={`NavBarMenu` + index} className="hover:text-pink-600 hover:underline cursor-pointer"> <LinkScroll to={ToLink} smooth={true} duration={500} >
+                                {LabelName}
+                            </LinkScroll></li>
+                        )
+                    })
+                }
             </ul>
 
-            {/* sideBar  */}
-
+            {/* SideBar  */}
             <div onClick={handleClick} className="md:hidden z-10  text-2xl ">
                 {!nav ? <FaBars /> : <FaTimes />}
             </div>
-            {/* mobile menu  */}
 
+            {/* Mobile Menu  */}
             <ul className={!nav ? 'hidden' : 'absolute top-16 right-4 text-[#0a192f] p-4 bg-pink-600 flex flex-col justify-center items-center '}>
-                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="home" smooth={true} duration={500} >
-                    Home
-                </LinkScroll></li>
-                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="about" smooth={true} duration={500} >
-                    About
-                </LinkScroll></li>
-                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="skills" smooth={true} duration={500} >
-                    Skills
-                </LinkScroll></li>
-                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="work" smooth={true} duration={500} >
-                    Work
-                </LinkScroll></li>
-                <li className="py-1 text-2xl"><LinkScroll onClick={handleClick} to="contact" smooth={true} duration={500} >
-                    Contact
-                </LinkScroll></li>
+                {
+                    mobileNavMenuData.map(({ toLink: ToLink, labelName: LabelName }, index) => {
+                        return (
+                            <li key={`mobileIcons` + index} className="py-1 text-2xl"><LinkScroll onClick={handleClick} to={ToLink} smooth={true} duration={500} >
+                                {LabelName}
+                            </LinkScroll></li>
+                        )
+                    })
+                }
             </ul>
-            {/* Social icons  */}
+
+            {/* Side Social Icons  */}
             <div className="hidden lg:flex fixed flex-col top-[25%] left-0 ">
                 <ul>
-                    <li className=" w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/himanshu1807/">
-                            Linkedin <FaLinkedin size={30} />
-                        </a>
-                    </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300  bg-[#333333] ">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="https://github.com/himanshu-x">
-                            Github <FaGithub size={30} />
-                        </a>
-                    </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="mailto: hy12632@gmail.com">
-                            Email <HiOutlineMail size={30} />
-                        </a>
-
-                    </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="tel:8769476754">
-                            Phone <FiPhoneCall size={30} />
-                        </a>
-                    </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3681534,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525">
-                            Address <MdOutlineLocationOn size={30} />
-                        </a>
-                    </li>
-                    <li className=" w-[160px] h-[60px] flex justify-between  item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-amber-700">
-                        <a className="flex justify-around items-center w-full text-gray-300" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing">
-                            Resume <HiOutlineDocumentText size={30} />
-                        </a>
-                    </li>
+                    {
+                        socialData.map(({ url, labelName: Name, iconName: IconName, bgColor: BgColor }, index) => {
+                            const linkClasses = "flex justify-around items-center w-full text-gray-300"
+                            const listClasses = `w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 ${BgColor}`
+                            return (
+                                <li key={`sideIcons` + index} className={listClasses}>
+                                    <BaseLinkUrlBlankTab className={linkClasses} url={url}> {Name} <IconName size={30} /></BaseLinkUrlBlankTab>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         </div>

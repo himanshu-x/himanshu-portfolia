@@ -2,8 +2,6 @@ import React from "react";
 import { HiArrowNarrowDown } from "react-icons/hi";
 
 export default function Home() {
-
-
     return (
         <div name="home" className="w-full lg:h-screen pt-[64px] bg-[#0a192f]">
 

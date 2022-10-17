@@ -5,9 +5,19 @@ import Github from "../assets/github-icon.svg"
 import Javascript from "../assets/javascript-1.svg"
 import Tailwindcss from "../assets/tailwindcss.svg"
 import Reactjs from "../assets/react-2.svg"
-
+import BaseLinkUrlBlankTab from "../utility-component/BaselinkUrlBlankTab";
 
 export default function Skills() {
+
+    const skillsData = [
+        { url: "https://reactjs.org/", labelName: "REACTJS", imgSrc: Reactjs },
+        { url: "https://www.w3schools.com/js/default.asp", labelName: "JAVASCRIPT", imgSrc: Javascript },
+        { url: "https://www.w3schools.com/html/default.asp", labelName: "HTML", imgSrc: Html },
+        { url: "https://www.w3schools.com/css/default.asp", labelName: "CSS", imgSrc: Css },
+        { url: "https://tailwindcss.com/docs/installation", labelName: "TAILWINDCSS", imgSrc: Tailwindcss },
+        { url: "https://github.com/", labelName: "GITHUB", imgSrc: Github }
+    ]
+
 
     return (
         <div name="skills" className=" w-full lg:h-screen bg-[#0a192f] text-gray-300 ">
@@ -17,32 +27,20 @@ export default function Skills() {
                     <p className="py-4">These are the technologies I've worked with.</p>
                 </div>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://reactjs.org/"><img className="w-20 h-20 mx-auto" src={Reactjs} alt="reactjs icon" /></a>
-                        <p className="my-4">REACTJS</p>
-                    </div>
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://www.w3schools.com/js/default.asp"><img className="w-20 h-20 mx-auto" src={Javascript} alt="javascript icon" /></a>
-                        <p className="my-4">JAVASCRIPT</p>
-                    </div>
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://www.w3schools.com/html/default.asp"><img className="w-20 h-20 mx-auto" src={Html} alt="html icon" /></a>
-                        <p className="my-4">HTML</p>
-                    </div>
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://www.w3schools.com/css/default.asp"> <img className="w-20 h-20 mx-auto" src={Css} alt="css icon" /></a>
-                        <p className="my-4">CSS</p>
-                    </div>
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://tailwindcss.com/docs/installation"><img className="w-20 h-20 mx-auto" src={Tailwindcss} alt="tailwindcss icon" /></a>
-                        <p className="my-4">TAILWINDCSS</p>
-                    </div>
-                    <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
-                        <a href="https://github.com/"><img className="w-20 h-20 mx-auto" src={Github} alt="github icon" /></a>
-                        <p className="my-4">GITHUB</p>
-                    </div>
+
+                    {
+                        skillsData.map(({ url, labelName: LabelName, imgSrc: ImgSrc }, index) => {
+                            return (
+                                <div key={`skill` + index}
+                                    className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500" >
+                                    <BaseLinkUrlBlankTab url={url}><img className="w-20 h-20 mx-auto" src={ImgSrc} alt="reactjs icon" /></BaseLinkUrlBlankTab>
+                                    <p className="my-4">{LabelName}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
