@@ -38,11 +38,13 @@ export default function Navbar() {
             {/* NavBarMenu  */}
             <ul className="hidden md:flex gap-8 text-xl">
                 {
-                    mobileNavMenuData.map(({ toLink: ToLink, labelName: LabelName }, index) => {
+                    mobileNavMenuData.map(({ toLink, labelName }, index) => {
                         return (
-                            <li key={`NavBarMenu` + index} className="hover:text-pink-600 hover:underline cursor-pointer"> <LinkScroll to={ToLink} smooth={true} duration={500} >
-                                {LabelName}
-                            </LinkScroll></li>
+                            <li key={`NavBarMenu` + index} className="hover:text-pink-600 hover:underline cursor-pointer">
+                                <LinkScroll to={toLink} smooth={true} duration={500} >
+                                    {labelName}
+                                </LinkScroll>
+                            </li>
                         )
                     })
                 }
@@ -50,7 +52,7 @@ export default function Navbar() {
 
             {/* SideBar  */}
             <div onClick={handleClick} className="md:hidden z-10  text-2xl ">
-                {!nav ? <FaBars /> : <FaTimes />}
+                {!nav ? <FaBars className="text-pink-800" /> : <FaTimes className="text-pink-800" />}
             </div>
 
             {/* Mobile Menu  */}
@@ -71,7 +73,7 @@ export default function Navbar() {
                 <ul>
                     {
                         socialData.map(({ url, labelName: Name, iconName: IconName, bgColor: BgColor }, index) => {
-                            const linkClasses = "flex justify-around items-center w-full text-gray-300"
+                            const linkClasses = "flex justify-around items-center w-full text-gray-300 "
                             const listClasses = `w-[160px] h-[60px] flex justify-between  items-center ml-[-100px] hover:ml-[-10px] duration-300 ${BgColor}`
                             return (
                                 <li key={`sideIcons` + index} className={listClasses}>

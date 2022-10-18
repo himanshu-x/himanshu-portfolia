@@ -29,7 +29,7 @@ const Work = () => {
                     {
                         aboutData.map(({ url, labelName, bgImg }, index) => {
                             const divClasses = "bg-cover object-center shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div "
-                            const linkClasses = "border hover:bg-pink-600 bg-orange-600 rounded-md p-2"
+                            const linkClasses = "border hover:bg-pink-600 bg-orange-600 rounded-md p-2 bg-pink-700"
                             return (
                                 <div key={`about` + index}
                                     style={{ backgroundImage: `url(${bgImg})` }}

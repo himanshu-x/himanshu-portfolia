@@ -1,22 +1,25 @@
-import React from "react";
-import Navbar from "./utility-component/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
-import Work from './pages/Work'
-import SocialLink from './pages/SocialLinks'
+import React, { lazy, Suspense } from "react";
+const Navbar = lazy(() => import('./utility-component/Navbar'));
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Work = lazy(() => import('./pages/Work'));
+const SocialLink = lazy(() => import('./pages/SocialLinks'));
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
-      <SocialLink />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Contact />
+        <SocialLink />
+      </Suspense>
+
     </div>
 
   );

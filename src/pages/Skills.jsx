@@ -29,12 +29,12 @@ export default function Skills() {
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
 
                     {
-                        skillsData.map(({ url, labelName: LabelName, imgSrc: ImgSrc }, index) => {
+                        skillsData.map(({ url, labelName, imgSrc }, index) => {
                             return (
                                 <div key={`skill` + index}
                                     className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500" >
-                                    <BaseLinkUrlBlankTab url={url}><img className="w-20 h-20 mx-auto" src={ImgSrc} alt="reactjs icon" /></BaseLinkUrlBlankTab>
-                                    <p className="my-4">{LabelName}</p>
+                                    <BaseLinkUrlBlankTab url={url}><img className="w-20 h-20 mx-auto" src={imgSrc} alt="reactjs icon" /></BaseLinkUrlBlankTab>
+                                    <p className="my-4">{labelName}</p>
                                 </div>
                             )
                         })
