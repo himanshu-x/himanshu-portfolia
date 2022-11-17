@@ -8,7 +8,7 @@ export default function Contact() {
         { url: "https://www.google.com/maps/place/ROYAL+GARDEN+ESTATE,+E+12,+Sector+61,+Noida,+Uttar+Pradesh+201307/@28.5972827,77.3659647,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce579f4f7b9e5:0x9600e2852e68bf63!8m2!3d28.5973257!4d77.3681525", labelName: "Royal Garden, Sec-61, Noida", iconName: HiOutlineLocationMarker },
         { url: "mailto: hy12632@gmail.com", labelName: "hy12632@gmail.com", iconName: HiOutlineMail },
         { url: "tel:8769476754", labelName: "+91-8769476754", iconName: HiOutlinePhone },
-        { url: "https://drive.google.com/file/d/1rNp6z1Dpii-WCZi_nNgQ2Y2Y-tZS24F8/view?usp=sharing", labelName: "Resume", iconName: HiOutlineDocumentText },
+        { url: "https://drive.google.com/file/d/1R31CetvFR78RM3xdxwPSnkKIUQb4o_xV/view?usp=share_link", labelName: "Resume", iconName: HiOutlineDocumentText },
     ]
 
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Veganfood from '../assets/justveganfood.jpg';
-import DumyFoodWeb from '../assets/dumyfood-min.png';
+import BestEats from '../assets/bestEats.png';
 import Tours from '../assets/tours-min.png';
 import Village from '../assets/myvillage-min.png';
 import RestaMenu from '../assets/RestaMenu.png';
@@ -9,8 +9,8 @@ import BaseLinkUrlBlankTab from '../utility-component/BaselinkUrlBlankTab';
 const Work = () => {
 
     const aboutData = [
-        { url: "https://github.com/himanshu-x/just-vegan-react", labelName: "Private Code", bgImg: Veganfood },
-        { url: "https://github.com/himanshu-x/new-food-react-websites", labelName: "Check code", bgImg: DumyFoodWeb },
+        { url: "https://github.com/himanshu-x/just-vegan-react", labelName: "Check Code", bgImg: Veganfood },
+        { url: "https://github.com/himanshu-x/best-eats", labelName: "Check code", bgImg: BestEats },
         { url: "https://github.com/himanshu-x/tours-app", labelName: "Check code", bgImg: Tours },
         { url: "https://github.com/himanshu-x/my-village", labelName: "Private Code", bgImg: Village },
         { url: "https://github.com/himanshu-x/restaurant-menu", labelName: "Check code", bgImg: RestaMenu },

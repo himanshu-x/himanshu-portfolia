@@ -1,5 +1,6 @@
 import React from "react";
 import Html from "../assets/html-1.svg"
+import Bootstrap from "../assets/bootspimg.png"
 import Css from "../assets/css-3.svg"
 import Github from "../assets/github-icon.svg"
 import Javascript from "../assets/javascript-1.svg"
@@ -15,6 +16,7 @@ export default function Skills() {
         { url: "https://www.w3schools.com/html/default.asp", labelName: "HTML", imgSrc: Html },
         { url: "https://www.w3schools.com/css/default.asp", labelName: "CSS", imgSrc: Css },
         { url: "https://tailwindcss.com/docs/installation", labelName: "TAILWINDCSS", imgSrc: Tailwindcss },
+        { url: "https://getbootstrap.com/", labelName: "BOOTSTRAP", imgSrc: Bootstrap },
         { url: "https://github.com/", labelName: "GITHUB", imgSrc: Github }
     ]
 
